@@ -3,7 +3,7 @@
 
 
 <h2>Description</h2>
-For the University Cyber Attack project, I assumed the role of a cyber security officer and member of the Incident Response Team. Samantha, a teaching staff member, reported abusive and threatening emails received during vacation. The dean provided details including Samantha's name, personal and official email IDs, and information about her involvement in obstructing a student during an exam. My work involved conducting network scans, vulnerability assessments, attack simulations, email forensics, and report compilation to address the incident effectively.
+For the University Cyber Attack project, I assumed the role of a cyber security officer and member of the Incident Response Team. Samantha, a teaching staff member, reported abusive and threatening emails received during vacation. The dean provided details including Samantha's name, personal and official email IDs, and information about her involvement in obstructing a student during an exam. An incident also occurred during that time, causing the university website to be unavailable. My work involved conducting network scans, vulnerability assessments, attack simulations, email forensics, and report compilation to address the incident effectively.
 
 
 
