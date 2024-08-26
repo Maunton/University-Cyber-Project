@@ -1,8 +1,8 @@
-<h1>Unviversity Cyber Project</h1>
+<h1>$${\color{yellow}University \space Cyber \space Project}$$</h1>
 
 
 
-<h2>Description</h2>
+<h2>$${\color{blue}Description:}$$</h2>
 For the University Cyber Attack project, I assumed the role of a cyber security officer and member of the Incident Response Team. Samantha, a teaching staff member, reported abusive and threatening emails received during vacation. The dean provided details including Samantha's name, personal and official email IDs, and information about her involvement in obstructing a student during an exam. An incident also occurred during that time, causing the university website to be unavailable. My work involved conducting network scans, vulnerability assessments, attack simulations, email forensics, and report compilation to address the incident effectively.
 
 
@@ -13,7 +13,7 @@ For the University Cyber Attack project, I assumed the role of a cyber security 
 <br />
 
 
-<h2>Tools and Commands Used</h2>
+<h2>$${\color{blue}Tools \space and \space Commands \space Used:}$$</h2>
 
 - <b>route</b>
 - <b>iconfig</b>
@@ -21,53 +21,64 @@ For the University Cyber Attack project, I assumed the role of a cyber security 
 - <b>Hping3</b>
 - <b>WireShark</b>
 
-<h2>Environments Used </h2>
+<h2>$${\color{blue}Environments \space Used:}$$</h2>
 
 - <b>VirtualBox</b>
 - <b>Kali Linux</b>
 - <b>Windows 10</b>
 
-<h2>Project walk-through:</h2>
+<h1>$${\color{yellow}Project \space Walk-through:}$$</h1>
 
-<p align="center">
+<p align="left">
 Journal Report: <br/>
+ <br />
+<p align="center">    
 <img src="https://imgur.com/cQAa6Pu.png" height="80%" width="80%" alt="Project walk-through"/>
 <br />
 <br />
+    <p align="left">
 Email Details Investigation: <br/>
+ <br />
+<p align="center">         
 <img src="https://imgur.com/sTgllEQ.png" height="80%" width="80%" alt="Project walk-through"/>
 <br />
 <br />  
-Scanning Report of University Network: <br/>
+<h2>$${\color{blue}Scanning \space Report \space of \space University \space Network:}$$</h2>                                                               
 
 
-## Usage:
+## $${\color{red}Command:}$$
     route
-## Usage:
     ifconfig
-## Usage:
     sudo nmap -PR -sn 192.168.20.0/24    
-    
+<p align="center">
 <img src="https://imgur.com/kd7wzP6.png" height="80%" width="80%" alt="Project walk-through"/>
 <br /> 
-<br />  
+<br />
+    <p align="left">
 DoS simulated Attack on University Website using Hping3: <br/>
 
 
-## Usage:
+## $${\color{red}Command:}$$
     sudo hping3 -S --flood -V -p 135 192.168.20.14
+<p align="center">    
 <img src="https://imgur.com/yxNUsHF.png" height="80%" width="80%" alt="Project walk-through"/>
 <br />
-<br />  
+<br />
+<p align="left">
 PCap, from DoS attack, using WireShark: <br/>
+    <p align="center">
 <img src="https://imgur.com/XeF2YuI.png" height="80%" width="80%" alt="Project walk-through"/>
 <br />
 <br />
+<p align="left">
 Common Vulnerability score of University attack: <br/>
+    <p align="center">
 <img src="https://imgur.com/UohhQ70.png" height="80%" width="80%" alt="Project walk-through"/>
 <br />
 <br />
+<p align="left">
 Incident investigation report for DoS attack on University website: <br/>
+    <p align="center">
 <img src="https://imgur.com/U1EMejD.png" height="80%" width="80%" alt="Project walk-through"/>
 </p>
 
