@@ -45,67 +45,44 @@ The scenario involved reported threatening emails sent to a university staff mem
 
 > **Note:** This project was performed in an authorized academic lab environment for educational purposes.
 
-<h1>$${Project Walk-through:}$$</h1>
+## Investigation Walkthrough
 
-<p align="left">
-Journal Report: <br/>
- <br />
-<p align="center">    
-<img src="https://imgur.com/cQAa6Pu.png" height="80%" width="80%" alt="Project walk-through"/>
-<br />
-<br />
-    <p align="left">
-Email Details Investigation: <br/>
- <br />
-<p align="center">         
-<img src="https://imgur.com/sTgllEQ.png" height="80%" width="80%" alt="Project walk-through"/>
-<br />
-<br />  
-<h2>$${Scanning Report of University Network:}$$</h2>                                                               
+This section shows how I approached the incident from initial intake through technical investigation and final reporting.
 
+---
 
-## $${Command:}$$
-    route
-    ifconfig
-    sudo nmap -PR -sn 192.168.20.0/24    
-<p align="center">
-<img src="https://imgur.com/kd7wzP6.png" height="80%" width="80%" alt="Project walk-through"/>
-<br /> 
-<br />
-    <p align="left">
-DoS simulated Attack on University Website using Hping3: <br/>
+### 1) Incident Intake and Case Context
 
+The investigation began with a report involving threatening and abusive emails sent to a university staff member, along with a separate website outage that raised concern about possible malicious activity. At this stage, the goal was to understand the reported events, identify available evidence, and determine what systems or communications required investigation.
 
-## $${Command:}$$
-    sudo hping3 -S --flood -V -p 135 192.168.20.14
-<p align="center">    
-<img src="https://imgur.com/yxNUsHF.png" height="80%" width="80%" alt="Project walk-through"/>
-<br />
-<br />
-<p align="left">
-PCap, from DoS attack, using WireShark: <br/>
-    <p align="center">
-<img src="https://imgur.com/XeF2YuI.png" height="80%" width="80%" alt="Project walk-through"/>
-<br />
-<br />
-<p align="left">
-Common Vulnerability score of University attack: <br/>
-    <p align="center">
-<img src="https://imgur.com/UohhQ70.png" height="80%" width="80%" alt="Project walk-through"/>
-<br />
-<br />
-<p align="left">
-Incident investigation report for DoS attack on University website: <br/>
-    <p align="center">
-<img src="https://imgur.com/U1EMejD.png" height="80%" width="80%" alt="Project walk-through"/>
-</p>
+**Evidence reviewed:**
+- Initial case notes
+- Staff member details
+- Incident background information
 
-<!--
- ```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
---!>
+![Case Intake / Journal Report](https://imgur.com/cQAa6Pu.png)
+
+---
+
+### 2) Email-Related Evidence Review
+
+I reviewed the email-related details provided in the scenario to better understand the reporting party, the context of the communication, and whether the incident appeared isolated or related to broader malicious activity.
+
+**Focus areas:**
+- Reported sender/recipient details
+- Possible harassment indicators
+- Relevance of communication to the larger incident timeline
+
+![Email Investigation Details](https://imgur.com/sTgllEQ.png)
+
+---
+
+### 3) Network Discovery and Host Identification
+
+To establish visibility into the target environment, I performed basic network discovery and host identification within the lab. This helped identify active systems and supported later investigation steps.
+
+**Example commands used:**
+```bash
+route
+ifconfig
+sudo nmap -PR -sn 192.168.20.0/24
