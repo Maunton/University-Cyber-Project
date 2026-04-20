@@ -86,6 +86,7 @@ To establish visibility into the target environment, I performed basic network d
 route
 ifconfig
 sudo nmap -PR -sn 192.168.20.0/24
+```
 
 4) Controlled Attack Simulation
 
