@@ -1,31 +1,49 @@
-<h1>$${University Cyber Project}$$</h1>
+# University Cyber Project
 
+## Incident Response and Network Security Investigation
 
+This project documents an academic cybersecurity investigation in which I acted as a member of an incident response team responding to abusive email activity and a university website outage in a controlled lab environment.
 
-<h2>$${Description:}$$</h2>
-For the University Cyber Attack project, I assumed the role of a cyber security officer and member of the Incident Response Team. Samantha, a teaching staff member, reported abusive and threatening emails received during vacation. The dean provided details including Samantha's name, personal and official email IDs, and information about her involvement in obstructing a student during an exam. An incident also occurred during that time, causing the university website to be unavailable. My work involved conducting network scans, vulnerability assessments, attack simulations, email forensics, and report compilation to address the incident effectively.
+## Project Summary
 
+The scenario involved reported threatening emails sent to a university staff member, along with a website availability issue that suggested possible malicious activity. My role was to investigate the incident by gathering evidence, analyzing email-related details, performing network reconnaissance, reviewing potential vulnerabilities, simulating attacker activity in a lab setting, and documenting findings in a report.
 
+## What I Did
 
+- Investigated reported email abuse indicators
+- Performed network discovery and host identification
+- Conducted vulnerability assessment activities
+- Simulated a denial-of-service style attack in a controlled lab environment
+- Captured and reviewed network traffic in Wireshark
+- Documented findings in an incident investigation report
 
+## Skills Demonstrated
 
+- Incident response
+- Network reconnaissance
+- Vulnerability assessment
+- Packet analysis
+- Technical documentation
+- Cybersecurity investigation workflow
 
-<br />
+## Tools Used
 
+- Kali Linux
+- VirtualBox
+- Windows 10
+- Nmap
+- hping3
+- Wireshark
+- ifconfig
+- route
 
-<h2>$${Tools and Commands Used:}$$</h2>
+## Environment
 
-- <b>route</b>
-- <b>iconfig</b>
-- <b>Nmap</b>
-- <b>Hping3</b>
-- <b>WireShark</b>
+- Controlled academic lab
+- Isolated test systems
+- University case-study scenario
 
-<h2>$${Environments Used:}$$</h2>
-
-- <b>VirtualBox</b>
-- <b>Kali Linux</b>
-- <b>Windows 10</b>
+> **Note:** This project was performed in an authorized academic lab environment for educational purposes.
 
 <h1>$${Project Walk-through:}$$</h1>
 
