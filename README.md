@@ -88,45 +88,51 @@ ifconfig
 sudo nmap -PR -sn 192.168.20.0/24
 ```
 
-4) Controlled Attack Simulation
+### 4) Controlled Availability Attack Simulation in Lab
 
 To better understand how service disruption could affect the university website, I performed a denial-of-service style simulation in a controlled academic lab environment. This helped demonstrate how traffic flooding could impact availability and what related traffic might look like during packet analysis.
 
-Lab objective:
+**Example command used:**
+```bash
+sudo hping3 -S --flood -V -p 135 192.168.20.14
+```
+**Lab objective:**
+- Observe service disruption behavior
+- Generate traffic for packet capture review
+- Support incident analysis and reporting
 
-Observe service disruption behavior
-Generate traffic for packet capture review
-Support incident analysis and reporting
+> This activity was conducted in an authorized academic lab for educational purposes only.
 
-This activity was conducted in an authorized academic lab for educational purposes only.
+---
 
-5) Packet Capture and Traffic Analysis
+### 5) Packet Capture and Traffic Analysis
 
 After generating lab traffic, I reviewed packet capture data in Wireshark to observe how the simulated activity appeared on the network. This step supported analysis of abnormal traffic patterns and reinforced how packet evidence can be used during incident investigations.
 
-What I looked for:
+**What I looked for:**
+- Unusual packet volume
+- Repeated connection attempts
+- Indicators of service abuse affecting availability
 
-Unusual packet volume
-Repeated connection attempts
-Indicators of service abuse affecting availability
+---
 
-6) Vulnerability and Risk Context
+### 6) Vulnerability and Risk Context
 
 I reviewed vulnerability scoring information to help frame the seriousness of the attack scenario and communicate risk in a way that supports decision-making and reporting.
 
-Why this mattered:
+**Why this mattered:**
+- Helped communicate severity
+- Supported prioritization
+- Added context to the overall incident assessment
 
-Helped communicate severity
-Supported prioritization
-Added context to the overall incident assessment
+---
 
-7) Final Incident Reporting
+### 7) Final Incident Reporting
 
 The final step was documenting the investigation, findings, and technical observations in a report format. This is an important part of cybersecurity work because strong documentation helps communicate what happened, what was analyzed, and what actions should follow.
 
-Deliverables included:
-
-Investigation notes
-Technical findings
-Supporting screenshots/evidence
-Incident report summary
+**Deliverables included:**
+- Investigation notes
+- Technical findings
+- Supporting screenshots and evidence
+- Incident report summary
