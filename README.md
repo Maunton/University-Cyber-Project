@@ -143,3 +143,26 @@ The final step was documenting the investigation, findings, and technical observ
 - Incident report summary
 
 ![Incident Investigation Report](assets/images/07-final-report.png)
+
+---
+
+## Key Findings
+
+- Identified suspicious and abusive email activity within the case scenario
+- Established visibility into the lab environment through host discovery and network scanning
+- Demonstrated how traffic flooding could impact service availability in a controlled academic lab
+- Observed abnormal traffic behavior through packet capture analysis in Wireshark
+- Documented investigative steps and technical observations in a structured incident report
+
+## Recommendations
+
+- Improve monitoring and alerting for unusual traffic spikes and availability issues
+- Strengthen email reporting and evidence collection procedures for harassment-related incidents
+- Apply security hardening and availability protections to internet-facing systems
+- Maintain clear incident documentation to support repeatable investigations and response efforts
+- Continue using packet analysis and host discovery techniques to support future investigations
+
+## What I Learned
+
+This project strengthened my understanding of incident response workflow, network reconnaissance, packet analysis, and technical documentation. It also reinforced the importance of organizing findings clearly so that evidence can support analysis, reporting, and future security recommendations.
+
