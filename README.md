@@ -43,6 +43,11 @@ The scenario involved reported threatening emails sent to a university staff mem
 - Isolated test systems
 - University case-study scenario
 
+**Lab objective:**
+- Observe service disruption behavior
+- Generate traffic for packet capture review
+- Support incident analysis and reporting
+
 > **Note:** This project was performed in an authorized academic lab environment for educational purposes.
 
 ## Investigation Walkthrough
@@ -60,7 +65,7 @@ The investigation began with a report involving threatening and abusive emails s
 - Staff member details
 - Incident background information
 
-![Case Intake / Journal Report](https://imgur.com/cQAa6Pu.png)
+![Case Intake / Journal Report](assets/images/01-case-intake.png)
 
 ---
 
@@ -73,7 +78,7 @@ I reviewed the email-related details provided in the scenario to better understa
 - Possible harassment indicators
 - Relevance of communication to the larger incident timeline
 
-![Email Investigation Details](https://imgur.com/sTgllEQ.png)
+![Email Investigation Details](assets/images/02-email-review.png)
 
 ---
 
@@ -87,6 +92,7 @@ route
 ifconfig
 sudo nmap -PR -sn 192.168.20.0/24
 ```
+![Network Scanning Report](assets/images/03-network-scan.png)
 
 ### 4) Controlled Availability Attack Simulation in Lab
 
@@ -96,12 +102,7 @@ To better understand how service disruption could affect the university website,
 ```bash
 sudo hping3 -S --flood -V -p 135 192.168.20.14
 ```
-**Lab objective:**
-- Observe service disruption behavior
-- Generate traffic for packet capture review
-- Support incident analysis and reporting
-
-> This activity was conducted in an authorized academic lab for educational purposes only.
+![Controlled DoS Simulation](assets/images/04-dos-simulation.png)
 
 ---
 
@@ -114,6 +115,8 @@ After generating lab traffic, I reviewed packet capture data in Wireshark to obs
 - Repeated connection attempts
 - Indicators of service abuse affecting availability
 
+![Wireshark Packet Capture Review](assets/images/05-wireshark-analysis.png)
+
 ---
 
 ### 6) Vulnerability and Risk Context
@@ -124,6 +127,8 @@ I reviewed vulnerability scoring information to help frame the seriousness of th
 - Helped communicate severity
 - Supported prioritization
 - Added context to the overall incident assessment
+
+![Vulnerability Severity Context](assets/images/06-risk-context.png)
 
 ---
 
@@ -136,3 +141,5 @@ The final step was documenting the investigation, findings, and technical observ
 - Technical findings
 - Supporting screenshots and evidence
 - Incident report summary
+
+![Incident Investigation Report](assets/images/07-final-report.png)
