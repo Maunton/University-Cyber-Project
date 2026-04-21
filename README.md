@@ -2,11 +2,11 @@
 
 ## Incident Response and Network Security Investigation
 
-This project documents an academic cybersecurity investigation in which I acted as a member of an incident response team responding to abusive email activity and a university website outage in a controlled lab environment.
+This project documents an academic cybersecurity investigation in which I acted as a member of an incident response team investigating abusive email activity and a university website outage in a controlled lab environment.
 
 ## Project Summary
 
-The scenario involved reported threatening emails sent to a university staff member, along with a website availability issue that suggested possible malicious activity. My role was to investigate the incident by gathering evidence, analyzing email-related details, performing network reconnaissance, reviewing potential vulnerabilities, simulating attacker activity in a lab setting, and documenting findings in a report.
+The scenario involved reported abusive and threatening emails sent to a university staff member, along with a website availability issue that suggested possible malicious activity. My role was to investigate the incident by gathering evidence, analyzing email-related details, performing network reconnaissance, reviewing potential vulnerabilities, simulating attack activity in a controlled lab setting, and documenting findings in a report.
 
 ## What I Did
 
@@ -43,12 +43,12 @@ The scenario involved reported threatening emails sent to a university staff mem
 - Isolated test systems
 - University case-study scenario
 
-**Lab objective:**
-- Observe service disruption behavior
-- Generate traffic for packet capture review
-- Support incident analysis and reporting
+## Repository Contents
 
-> **Note:** This project was performed in an authorized academic lab environment for educational purposes.
+- `README.md` — overview of the project, investigation workflow, findings, and recommendations
+- `assets/images/` — screenshots and visual evidence used throughout the walkthrough
+
+This repository is organized as a case-study style incident response project, with supporting screenshots included directly in the repository for long-term accessibility and review.
 
 ## Investigation Walkthrough
 
@@ -103,6 +103,13 @@ To better understand how service disruption could affect the university website,
 sudo hping3 -S --flood -V -p 135 192.168.20.14
 ```
 ![Controlled DoS Simulation](assets/images/04-dos-simulation.png)
+
+**Lab objective:**
+- Observe service disruption behavior
+- Generate traffic for packet capture review
+- Support incident analysis and reporting
+
+> **Note:** This project was performed in an authorized academic lab environment for educational purposes.
 
 ---
 
