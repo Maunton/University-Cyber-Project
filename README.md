@@ -1,4 +1,4 @@
-# University Cyber Project
+# University Incident Response Case Study
 
 ## Incident Response and Network Security Investigation
 
